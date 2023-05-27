@@ -1,69 +1,79 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>战斗集团</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>我的个人博客</title>
     <style>
-        /* css 样式文件 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            background-color: #333;
-            height: 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 3px;
-            transition: background-color 0.5s ease;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        p {
-            font-size: 18px;
-        }
+      /* 添加一些样式，使页面更美观 */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      nav {
+        background-color: #eee;
+        padding: 10px;
+      }
+      nav a {
+        display: inline-block;
+        padding: 5px;
+        margin: 0 10px;
+        color: #333;
+        text-decoration: none;
+      }
+      section {
+        background-color: #fff;
+        padding: 10px;
+        margin: 10px;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      /* 添加一个简单的动画效果 */
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      @keyframes move {
+        from {left: 0;}
+        to {left: 200px;}
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1>我的个人博客</h1>
+    </header>
     <nav>
-        		<a href="https://zhandouhome.rth1.vip/">首页</a>
-        <a href="#">联系我们</a>
-        		<a href="https://zhandouhome.rth1.vip/aboutus.html">关于我们</a>
-		<a href="https://zhandouhome.rth1.vip/news.html">每日头条</a>
-		<a href="https://zhandoubi.rth1.vip/">战斗币管理</a>
-		
-
-
+      <a href="#">首页</a>
+      <a href="#">分类</a>
+      <a href="#">标签</a>
+      <a href="#">关于我</a>
+      <a href="#">联系我</a>
     </nav>
-    <main>      
-使用事项：使用前最好使用Microsoft Edge浏览器或Google Chrome浏览器浏览战斗集团官网！如能正常显示，请忽略本信息!
-        <h1>欢迎来到牧马集团®有限公司官网</h1>
-        <h2 style="color: grey;">关于我们 Tell about us</h2>
-		<p>此公司由2023年3月5日创立。本公司由于特殊原因被迫改名为“牧马集团®”，并且以晨光®战起来系列中性笔相结合，
-		<p>于是创办了此公司。目前我们还拥有一家已被我们收购的公司，在这里不多讲了。再往期会继续更新！
-		<h5>BY:Laurie & Tony
-    </main>
-</body>
+    <section>
+      <h2>最新文章</h2>
+      <p>这里是一些最新的文章内容。</p>
+      <div class="box"></div>
+    </section>
+    <section>
+      <h2>热门文章</h2>
+      <p>这里是一些热门的文章内容。</p>
+      <div class="box"></div>
+    </section>
+    <footer>
+      &copy; 2021 我的个人博客
+    </footer>
+  </body>
 </html>
